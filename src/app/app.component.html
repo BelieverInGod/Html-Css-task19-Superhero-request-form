@@ -1,0 +1,10 @@
+<app-modal (switchEmiter)="addSwitch($event)" ></app-modal>
+<div class="entered">
+  <div class="in" [ngClass]="switch ? 'show' : 'hide'">
+    <h1>You're in!</h1>
+    <button class="btn btn_dark btn_min" (click)="removeUser()">log out</button>
+  </div>
+  <div class="out" [ngClass]="switch ? 'hide' : 'show'">
+    <h1>Please, refresh this page to log in</h1>
+  </div>
+</div>
